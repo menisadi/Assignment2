@@ -20,7 +20,7 @@ public:
 	vector<Roads*> getCarRoute();
 
 	//setters
-	void setCarRoute(vector<Roads*>* route);
+	void AddCarEvent::setCarRoute(vector<Roads*>* route);
 
 private:
 	vector<Roads*>* _routeToAdd;

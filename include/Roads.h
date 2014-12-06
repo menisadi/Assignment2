@@ -22,7 +22,7 @@ using namespace std;
      virtual ~Roads();
      Roads& operator=(const Roads &RoadsRightArg);
 
-	 void copy(const Roads &copyRoad);
+	 void Roads::copy(const Roads &copyRoad);
 	 //void Roads::clear();
      
 	 string getId() const;
@@ -43,7 +43,8 @@ using namespace std;
 	 void setCemeteryOfcars(vector<Car*>* CemeteryOfcarsVal);
 	 void setBaseSpeed(int basespeedVal);
 
-	 Car* popFirstCarInRoad();
+	 Car* returnFirstCarInRoad();
+	 void popFirstCarInRoad();
      void pushNewCarToRoad(Car* newCarVal); //meybe pointer*?
 	 void baseSpeedUpdate();
 	 void carSpeedUpdate();

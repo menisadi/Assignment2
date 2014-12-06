@@ -2,7 +2,7 @@
 #define _GLOBALVAR_H_
 
 #include <string>
-#include <map>
+#include <Map>
 using namespace std;
 class Car;
 class Roads;
