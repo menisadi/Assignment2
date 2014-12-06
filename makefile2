@@ -1,0 +1,51 @@
+###
+# Makefile for the Assignment 2 project
+###
+
+
+
+all: RoadSimulator
+
+RoadSimulator: bin/car.o bin/command.o bin/commandManager.o bin/event.o bin/eventManager.o bin/invalid.o bin/map.o bin/junction.o bin/report.o bin/Run.o bin/road.o
+	g++ -o bin/RoadSimulator bin/car.o bin/command.o bin/commandManager.o bin/event.o bin/eventManager.o bin/invalid.o bin/map.o bin/junction.o bin/report.o bin/Run.o bin/road.o
+
+#####g++ -o bin/RoadSimulator bin/car.o bin/command.o bin/commandManager.o bin/event.o bin/eventManager.o bin/invalid.o bin/map.o bin/junction.o bin/report.o bin/Run.o bin/road.o 
+
+@echo 'Finished building target: RoadSimulator
+	@echo ' '
+
+bin/car.o: src/car.cpp
+	g++ -g -Wall -Weffc++ -c -I$../include -o bin/car.o src/car.cpp
+
+bin/command.o: src/command.cpp
+	g++ -g -Wall -Weffc++ -c -I$../include -o bin/command.o src/command.cpp
+
+bin/commandManager.o: src/commandManager.cpp
+	g++ -g -Wall -Weffc++ -c -I$../include -o bin/commandManager.o src/commandManager.cpp
+
+bin/event.o: src/event.cpp
+	g++ -g -Wall -Weffc++ -c -I$../include -o bin/event.o src/event.cpp
+
+bin/eventManager.o: src/eventManager.cpp
+	g++ -g -Wall -Weffc++ -c -I$../include -o bin/eventManager.o src/eventManager.cpp
+
+bin/invalid.o: src/invalid.cpp
+	g++ -g -Wall -Weffc++ -c -I$../include -o bin/invalid.o src/invalid.cpp
+
+bin/map.o: src/map.cpp
+	g++ -g -Wall -Weffc++ -c -I$../include -o bin/map.o src/map.cpp
+
+bin/junction.o: src/junction.cpp
+	g++ -g -Wall -Weffc++ -c -I$../include -o bin/junction.o src/junction.cpp
+
+bin/report.o: src/report.cpp
+	g++ -g -Wall -Weffc++ -c -I$../include -o bin/report.o src/report.cpp
+
+bin/Run.o: src/Run.cpp
+	g++ -g -Wall -Weffc++ -c -I$../include -o bin/Run.o src/Run.cpp
+
+bin/road.o: src/road.cpp
+	g++ -g -Wall -Weffc++ -c -I$../include -o bin/road.o src/road.cpp
+
+clean:
+	rm -f bin/*
