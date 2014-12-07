@@ -91,5 +91,5 @@ Roads* Car::popFirstRoadsInRoute(){
 }
 
 void Car::updateHistory(){
-	_history=_history + "(" + to_string(global_SimulationTime) + "," + _currentRoad + "," + to_string(_locationInRoad )+ ")" ;
+	_history=_history + "(" + boost::lexical_cast<string>(global_SimulationTime) + "," + _currentRoad + "," + boost::lexical_cast<string>(_locationInRoad )+ ")" ;
 }

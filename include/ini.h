@@ -23,12 +23,12 @@ using namespace std;
 
 class IniClass{
 private:
-	vector<Roads*> IniClass::split(string toSplit, map<string, Roads*>*& allRoads);
+	vector<Roads*> split(string toSplit, map<string, Roads*>*& allRoads);
 public:
 	IniClass();
 	virtual ~IniClass();
 
-	void IniClass::readEvents(multimap<int, Event*>*& eventsInTimeOrder, map<string, Roads*>*& allRoads);
+	void readEvents(multimap<int, Event*>*& eventsInTimeOrder, map<string, Roads*>*& allRoads);
 	void readCommands(multimap<int, Reports*>*& allReports);
 	void readRoadMap(map<string, Junctions>*& junctions, map<string, Roads>*& roads);
 	void readRoadMap(map<string, Junctions*>*& junctions, map<string, Roads*>*& roads);

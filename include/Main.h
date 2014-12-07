@@ -13,9 +13,9 @@
 #include "Printer.h"
 
 //for memory leak
-#define CRTDBG_MAP_ALLOC
-#include <stdlib.h>
-#include <crtdbg.h>
+//#define CRTDBG_MAP_ALLOC
+//#include <stdlib.h>
+//#include <crtdbg.h>
 
 class Event;
 //class Roads;

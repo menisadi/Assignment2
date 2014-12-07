@@ -60,7 +60,7 @@ void deleteSimulation(){
 
 	delete(pt);
 
-	_CrtDumpMemoryLeaks();
+	// _CrtDumpMemoryLeaks();
 }
 
 int main(void)

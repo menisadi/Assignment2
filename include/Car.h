@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <string>
+#include <boost/lexical_cast.hpp>
 #include "GlobalVar.h"
 //#include "Roads.h"
 
@@ -38,7 +39,7 @@ public:
 	void setCurrentRoad(const string& currentRoad);
 	void setHistory(const string& history);
 	
-	void Car::copy(const Car& other);
+	void copy(const Car& other);
 	 
 	Roads* popFirstRoadsInRoute();
 	void initRouteFromStringINI(const string& RouteStringINI);

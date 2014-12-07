@@ -22,7 +22,7 @@ using namespace std;
      virtual ~Roads();
      Roads& operator=(const Roads &RoadsRightArg);
 
-	 void Roads::copy(const Roads &copyRoad);
+	 void copy(const Roads &copyRoad);
 	 //void Roads::clear();
      
 	 string getId() const;

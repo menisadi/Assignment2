@@ -21,12 +21,12 @@ using namespace std;
      virtual ~Junctions();
      Junctions& operator=(const Junctions &JunctionsRightArg);
 
-	void Junctions::copy(const Junctions& copyJunctions);
+	void copy(const Junctions& copyJunctions);
      
      string getIdJunction() const;
 	 vector<Roads*>* getRoadsInJunction() const;
      vector<int>* getTimeSlice() const;
-	 int Junctions::getTimeSliceByAppeared() const;
+	 int getTimeSliceByAppeared() const;
 	 vector<int>* getTimeSliceBeforeTheGreenLight() const;
 	 int getCurrentlyGreenLightRoadIndex() const;
 	 int getConterStasticCarPass() const;
